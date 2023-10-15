@@ -22,8 +22,11 @@ void substr(int ind,vector<int>vec1){
     cout<<endl;
     return;
   }
+  //there will be 2 options for every i whether to take or not take
+  //this is for taking condition
   vec1.push_back(vec[ind]);
   substr(ind+1,vec1);
   vec1.pop_back();
+  //this is for not taking condition
   substr(ind+1,vec1);
 }
